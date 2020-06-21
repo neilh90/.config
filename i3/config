@@ -233,7 +233,7 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-exec --noostartup-id feh --bg-scale /home/neil/Pictures/wallpapers/deer.jpg
+exec --no-startup-id feh --bg-scale /home/neil/Pictures/Wallpapers/deer.jpg
 
 # Screen Shots
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
