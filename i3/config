@@ -225,6 +225,6 @@ bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures
 bindsym Control+Print exec gnome-screenshot -i
 
 #Keyboard layout
-exec_always "setxkbmap -layout gb
+exec_always "setxkbmap -layout gb"
 exec_always compton -f
-exec --no-startup-id feh --bg-scale /home/neil/Pictures/Wallpapers/deer.jpg  
+exec --no-startup-id ~/.fehbg
