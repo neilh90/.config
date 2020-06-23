@@ -195,19 +195,15 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 hide_edge_borders both
 # Start i3bar to display a workspace bar (plus the system information i3status
+#
+# GAPS!!!
+gaps inner 10
+gaps outer 10
 # finds out, if available)
 bar {
-        status_command i3blocks
-        
+        status_command i3blocks -c ~/.config/i3blocks/config
+	height 18        
         position top
-        colors {
-		background $bg-color
-	    	separator #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
 }
 
 # start Rofi (a program launcher)
